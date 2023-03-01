@@ -21,15 +21,15 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-medium text-gray-900 mb-2">Contact Us</h3>
             <address className="text-gray-500 text-base">
-              123 Main Street<br />
-              Suite 200<br />
-              New York, NY 10001<br />
-              <a href="tel:+1-555-555-5555" className="hover:text-gray-900">+1 (555) 555-5555</a>
+              Mami Matango<br />
+              Souza<br />
+             <br />
+              <a href="tel:+237-679-125-327" className="hover:text-gray-900">+ (237) 679-125-327</a>
             </address>
           </div>
         </div>
         <div className="border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-500">&copy; 2023 Crypto Platform. All rights reserved.</p>
+          <p className="text-base text-gray-500 text-center">&copy; 2023 Ethingo. All rights reserved.</p>
         </div>
       </div>
     </footer>
