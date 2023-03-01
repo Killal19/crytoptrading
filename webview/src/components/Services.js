@@ -18,8 +18,10 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 );
 
 const Services = () => (
-  <div className="bg-white  ">
+  <div className="bg-gray-100  ">
+
     <div className=" container mx-auto px-4 md:px-20 py-12">
+    <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase text-center">Services offered</h2>
       <div className="flex md:flex-row items-center justify-between flex-col">
         <div className="flex-1 flex flex-col justify-start items-start">
           <h1 className="text-black text-3xl font-semibold sm:text-5xl py-2">

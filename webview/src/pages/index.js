@@ -4,6 +4,8 @@ import Hero from '../components/Hero'
 import Features from '../components/Features'
 import Footer from '../components/Footer'
 import Services from '@/components/Services'
+import TestimonialsSection from '@/components/MainTestimonial'
+import HowItWorks from '@/components/Howitworks'
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
       <main >
         <Hero />
         <Services />
-        <Features />
+        <HowItWorks />
+        {/* <Features /> */}
+        <TestimonialsSection />
        
       </main>
 

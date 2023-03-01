@@ -4,6 +4,8 @@ import Footer from '@/components/Footer'
 // import BlockchainTransactions from '@/components/BlockchainTransactions'
 import Services from '@/components/Services'
 import Paymentcard from '@/components/Paymentcard'
+import WhyChooseEthingo from '@/components/Whyus'
+import HowItWorks from '@/components/Howitworks'
 
 function payment() {
   return (
@@ -11,7 +13,9 @@ function payment() {
         <Paymentnav />
         {/* <BlockchainTransactions /> */}
         <Paymentcard />
+        <HowItWorks />
         {/* <Services /> */}
+        <WhyChooseEthingo />
         <Footer />
     </div>
   )
