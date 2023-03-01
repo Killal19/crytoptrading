@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "title": "Fast Transactions",
+        "description": "With our platform, you can make fast and secure Ethereum transactions in just a few clicks.",
+        "icon": "https://example.com/icons/fast-transactions.svg"
+      },
+      {
+        "title": "Low Fees",
+        "description": "Our platform offers low transaction fees, so you can save money on your Ethereum transfers.",
+        "icon": "https://example.com/icons/low-fees.svg"
+      },
+      {
+        "title": "Real-Time Tracking",
+        "description": "Stay up-to-date with your Ethereum transfers with real-time tracking and notifications.",
+        "icon": "https://example.com/icons/real-time-tracking.svg"
+      },
+      {
+        "title": "Secure Transactions",
+        "description": "Our platform uses industry-leading security protocols to ensure your Ethereum transfers are safe and secure.",
+        "icon": "https://example.com/icons/secure-transactions.svg"
+      }
+    ]
+  }
+  
