@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="bg-white py-10">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-wrap ">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-wrap items-center">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block">Ethereum Trades</span>
@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:pl-12 grid grid-cols-2 gap-4 my-4">
+        <div className="lg:w-6/12 lg:pl-12 grid grid-cols-2 gap-4 my-4">
   <div className="relative h-96 w-full">
     <Image
       src={bannerImage1}
