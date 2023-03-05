@@ -3,6 +3,8 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import Loader from "./Loader";
+import { TransactionContext } from "@/context/TransactionContext";
+import { shortenAddress } from "@/utils/shortenAddress";
 
 const companyCommonStyles =
   "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-black";
@@ -19,15 +21,17 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Paymentcard = () => {
-    const handleSubmit = (e) => {
-        const { addressTo, amount, keyword, message } = formData;
-    
-        e.preventDefault();
-    
-        if (!addressTo || !amount || !keyword || !message) return;
-    
-        sendTransaction();
-      };
+  const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
+
+  const handleSubmit = (e) => {
+    const { addressTo, amount, keyword, message } = formData;
+
+    e.preventDefault();
+
+    if (!addressTo || !amount || !keyword || !message) return;
+
+    sendTransaction();
+  };
     
   return (
     <div className="">
@@ -43,7 +47,9 @@ const Paymentcard = () => {
                   <BsInfoCircle fontSize={17} color="#fff" />
                 </div>
                 <div>
-                  <p className="text-white font-light text-sm">Ethereum</p>
+                  <p className="text-white font-light text-sm">
+                  {shortenAddress(currentAccount)}
+                  </p>
                   <p className="text-white font-semibold text-lg mt-1">
                     Send ETH
                   </p>
@@ -56,30 +62,30 @@ const Paymentcard = () => {
               placeholder="To Address"
               name="addressTo"
               type="text"
-              handleChange={""}
+             handleChange={handleChange}
             />
             <Input
               placeholder="Amount (ETH)"
               name="amount"
               type="number"
-              handleChange={""}
+             handleChange={handleChange}
             />
             <Input
               placeholder="Keyword(GIF)"
               name="keyword"
               type="text"
-              handleChange={""}
+             handleChange={handleChange}
             />
             <Input
               placeholder="Message (Optional)"
               name="message"
               type="text"
-              handleChange={""}
+             handleChange={handleChange}
             />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
-            {false
+            {isLoading
             ? <Loader />
             : (
               <button
